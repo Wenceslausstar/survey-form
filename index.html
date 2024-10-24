@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please fill out this short survey.</p>
+
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter your Name.." required />
+
+        <label for="email" id="email-label">Email</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your Email.."
+          required
+        />
+
+        <label for="number" id="number-label">Age</label>
+        <input
+          id="number"
+          type="number"
+          placeholder="Enter your age.."
+          required
+          min="3"
+          max="120"
+        />
+
+        <label for="dropdown">What do you do for fun?</label>
+        <select id="dropdown" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+
+        <label>Gender</label>
+        <label
+          ><input type="radio" name="gender" value="male" required />
+          Male</label
+        >
+        <label
+          ><input type="radio" name="gender" value="female" /> Female</label
+        >
+
+        <label>What are your interests?</label>
+        <label
+          ><input type="checkbox" name="interests" value="sports" />
+          Sports</label
+        >
+        <label
+          ><input type="checkbox" name="interests" value="coding" />
+          Coding</label
+        >
+        <label
+          ><input type="checkbox" name="interests" value="adventure" />
+          Adventures</label
+        >
+
+        <label for="comments">Any additional comments?</label>
+        <textarea
+          id="comments"
+          placeholder="Additional information.."
+          rows="4"
+        ></textarea>
+
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
